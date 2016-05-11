@@ -1,0 +1,1 @@
+select avg(reviews.avgstars) from (select avg(stars) as avgstars from Review group by user_id limit 20)reviews;
